@@ -257,7 +257,8 @@ h6 {
 }
 
 ul {
-  list-style: none;
+  list-style: circle inside ;
+
 }
 
 button,
