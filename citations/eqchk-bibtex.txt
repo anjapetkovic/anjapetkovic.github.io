@@ -1,0 +1,8 @@
+@misc{bauer2021extensible,
+      title={An extensible equality checking algorithm for dependent type theories},
+      author={Andrej Bauer and Anja Petković Komel},
+      year={2021},
+      eprint={2103.07397},
+      archivePrefix={arXiv},
+      primaryClass={cs.LO}
+}
