@@ -44,7 +44,7 @@
 
 
     <main>
-      <section class="light" id="aboutMe">
+      <section class="dark" id="aboutMe">
         <h1>About me</h1>
         <div class="main">
           <article>
@@ -57,7 +57,7 @@
       </section>
 
       </section>
-      <section class="dark" id="phd">
+      <section class="light" id="phd">
         <h1>My PhD thesis</h1>
         <h2 class="big">Meta-analysis of type theories with an application to the design of formal proofs</h2>
         <div class="main column">
@@ -75,19 +75,31 @@
             <a href="citations/phdthesisbibtex.txt">Bibtex</a>
             <!-- <a href="">Defence video</a> -->
           </div>
-          <!-- <article>
-            <img src="img/diagram.png" alt="Elaboration">
+          <article>
             <div class="content">
               <p class="main">
-                Blah blah blah Elaboration.
+                One way of studying compatibility of type theories is by their <span class="keyword">transformations</span>. To accommodate for the use in proof assistants, the transformations we consider are syntactic in nature, they preserve derivability and are general enough to be applicable to a large class of type theories. The transformations preserve some syntactic structure (like judgement kinds and syntactic classes) and they interact nicely with substitutions of variables and instantiations of metavariables: with the action on expressions they form a relative monad for syntax.
               </p>
             </div>
           </article>
           <article>
-            <img src="img/scale.jpg" alt="Equality checking">
             <div class="content">
               <p class="main">
-                Blah blah blah Equality checking.
+                A major use case for our definition of type-theoretic transformation is an <span class="keyword">elaboration</span>. When designing a type theory, especially for using it in a proof assistant, one often faces a dilemma of how verbose the syntax should be. Terms annotated with full typing information are easily amenable to algorithmic processing and have good meta-theoretic properties. However, the syntax can quickly become too verbose to handle, so more economic terms that omit typing information are much more usable in practice. One can also omit other evidence, like proof of termination for recursive functions, or explicit universe levels.
+
+                One common solution to this problem is to design two type theories: a fully annotated type theory S (the elaboration) that resides in the kernel of the proof assistant and an economic one T for the users input. The theories are connected via two maps: the retrogression transformation (r) that forgets the additional information, and the elaboration map (l) which uses a derivation to construct the missing data. We then prove two theorems: that elaboration is universal and that every finitary type theory has an elaboration. We also investigate some algorithmic properties of elaboration.
+              </p>
+            </div>
+            <img src="img/diagramElaboration.png" height="200" alt="Elaboration">
+          </article>
+          <article>
+            <div>
+            <img src="img/diagramEqchk1.png" alt="Equality checking"> <br/>
+            <img src="img/diagramEqchk2.png" alt="Equality checking">
+          </div>
+            <div class="content">
+              <p class="main">
+                Proof assistants based on type theories have <span class="keyword">equality checking algorithms</span> as their essential components. The algorithms free the users from proving mostly trivial judgemental equalities, and povide computation-by-normalization engines. Some systems, like Agda and Dedukti, allow the users to extend the built-in equality checkers. However, in a proof assistant that supports arbitrary user-definable type theories, like <a href="https://www.andromeda-prover.org/">Andromeda 2</a>, an equality checking algorithm highly depends on the given rules or may not even be available. Still, the proof assistant should provide support for equality checking that is easy to use and works well in the common, well-behaved cases. For this purpose we have developed a <span class="keyword">sound and extensible equality checking algorithm</span> for user-definable type theories. We implemented it in the <a href="https://www.andromeda-prover.org/">Andromeda 2</a> proof assistant.
               </p>
               <div class="paper">
                 <h4>
@@ -104,10 +116,10 @@
                 </div>
               </div>
             </div>
-          </article> -->
+          </article>
 
       </section>
-      <section class="light" id="publications">
+      <section class="dark" id="publications">
         <h1>Publications and talks</h1>
         <div class="main">
           <article class="big">
