@@ -1,0 +1,16 @@
+@inproceedings{BruggerKovacsPetkovicRainRawson:checkmateCCS,
+author = {Brugger, Lea Salome and Kov\'{a}cs, Laura and Petkovic Komel, Anja and Rain, Sophie and Rawson, Michael},
+title = {CheckMate: Automated Game-Theoretic Security Reasoning},
+year = {2023},
+isbn = {9798400700507},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3576915.3623183},
+doi = {10.1145/3576915.3623183},
+booktitle = {Proceedings of the 2023 ACM SIGSAC Conference on Computer and Communications Security},
+pages = {1407-1421},
+numpages = {15},
+keywords = {automated reasoning, decentralized protocols, game theory, secure protocols, security analysis},
+location = {Copenhagen, Denmark},
+series = {CCS '23}
+}
